@@ -52,4 +52,7 @@ export default class DayNightApplication extends Application {
 		}
 		return container
 	}
+
+	onResize() {
+	}
 }

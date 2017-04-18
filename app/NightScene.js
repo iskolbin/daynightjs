@@ -20,6 +20,6 @@ export default class NightScene extends Scene {
 			o.scale = random.randomFloat( 0.5, 0.75 )
 			o.rotation = random.randomFloat( Math.PI*2 )
 		})
-		this.fullscreen = new FullscreenButton( this, this.app.width - 48, this.app.height - 48 )
+		this.fullscreen = new FullscreenButton( this, this.app.width - 48, 48 )
 	}
 }

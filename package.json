@@ -3,7 +3,7 @@
   "description": "Day/night trivial game",
   "private": false,
   "author": "iskolbin",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "repository": "github.com/iskolbin/daynightjs",
   "scripts": {
     "start": "./node_modules/brunch/bin/brunch watch --server",
