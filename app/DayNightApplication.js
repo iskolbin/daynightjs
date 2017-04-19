@@ -1,4 +1,4 @@
-import { Application, Container, loader, ticker, extras } from 'pixi.js'
+import { Application, Container, Graphics, loader, ticker, extras } from 'pixi.js'
 import { update as updateTweens } from 'tween.js'
 import { Howl } from 'howler'
 import NightScene from './NightScene'
@@ -9,7 +9,7 @@ const HEIGHT = 1080
 export default class DayNightApplication extends Application {
 
 	constructor() {
-		super( WIDTH, HEIGHT, {backgroundColor:0x070220, antialias: true} )
+		super( WIDTH, HEIGHT, { antialias: true } )
 		this.width = WIDTH
 		this.height = HEIGHT
 		loader
@@ -51,6 +51,17 @@ export default class DayNightApplication extends Application {
 			parent.addChild( container )
 		}
 		return container
+	}
+
+	createRect( x, y, w, h, fillColor = 0, parent = this.stage ) {
+		const graphics = new Graphics()
+			.beginFill( fillColor )
+			.drawRect( 0, 0, w, h )
+			.endFill()
+		if ( parent ) {
+			parent.addChild( graphics )
+		}
+		return graphics
 	}
 
 	onResize() {

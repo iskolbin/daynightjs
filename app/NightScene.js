@@ -6,7 +6,7 @@ import FullscreenButton from './FullscreenButton'
 
 export default class NightScene extends Scene {
 	constructor( app ) {
-		super( app )
+		super( app, 0x070220 )
 		this.moon = new Moon( this, 200, 200 )
 		this.starsInRow = 5
 		this.starsInCol = 3

@@ -3,7 +3,7 @@
 # Day/night
 
 Trivial day/night cycle game using ES6 + Babel + Pixi4 + Howler2 + Brunch.
-See automatic build at [Github pages](https://iskolbin.github.io/daynight/)
+See automatic build at [Github pages](https://iskolbin.github.io/daynight/).
 
 ## Build
 
