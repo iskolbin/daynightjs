@@ -6,7 +6,7 @@ export default class FullscreenButton {
 		this.button = scene.createObject( ['expand.png','contract.png'], x, y )
 		this.button.interactive = true
 		this.button.on( 'pointerup', () => this.switchFullscreen() )
-		addFullscreenChangeListener( () => this.updateFullscreenStyle() )
+		Fullscreen.onchange( () => this.updateFullscreenStyle() )
 	}
 
 	switchFullscreen() {
