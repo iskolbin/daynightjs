@@ -11,7 +11,7 @@ export default class FullscreenButton {
 
 	switchFullscreen() {
 		if ( Fullscreen.enabled ) {
-			if ( Fullscreen.isFullscreen ) {
+			if ( !Fullscreen.default.isFullscreen ) {
 				Fullscreen.exit()
 			} else {
 				Fullscreen.request( this.scene.app.view )
@@ -21,7 +21,7 @@ export default class FullscreenButton {
 	}
 
 	updateFullscreenStyle() {
-		if ( !Fullscreen.isFullscreen ) {
+		if ( !Fullscreen.default.isFullscreen ) {
 			this.button.gotoAndStop( 0 )
 			this.scene.app.view.style['border-radius'] = '8px'
 		} else {
