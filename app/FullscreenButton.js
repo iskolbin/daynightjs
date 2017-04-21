@@ -12,9 +12,9 @@ export default class FullscreenButton {
 	switchFullscreen() {
 		if ( Fullscreen.enabled ) {
 			if ( !Fullscreen.default.isFullscreen ) {
-				Fullscreen.exit()
-			} else {
 				Fullscreen.request( this.scene.app.view )
+			} else {
+				Fullscreen.exit()
 			}
 			this.updateFullscreenStyle()
 		}
