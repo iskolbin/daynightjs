@@ -1,4 +1,4 @@
-import { requestFullscreen, cancelFullscreen, isFullscreen, addFullscreenChangeListener } from './util'
+import * as Fullscreen from 'screenfull'
 
 export default class FullscreenButton {
 	constructor( scene, x, y ) {
@@ -10,16 +10,18 @@ export default class FullscreenButton {
 	}
 
 	switchFullscreen() {
-		if ( isFullscreen() ) {
-			cancelFullscreen()
-		} else {
-			requestFullscreen( this.scene.app.view )
+		if ( Fullscreen.enabled ) {
+			if ( Fullscreen.isFullscreen ) {
+				Fullscreen.exit()
+			} else {
+				Fullscreen.request( this.scene.app.view )
+			}
+			this.updateFullscreenStyle()
 		}
-		this.updateFullscreenStyle()
 	}
 
 	updateFullscreenStyle() {
-		if ( !isFullscreen() ) {
+		if ( !Fullscreen.isFullscreen ) {
 			this.button.gotoAndStop( 0 )
 			this.scene.app.view.style['border-radius'] = '8px'
 		} else {
