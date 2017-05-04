@@ -1,0 +1,65 @@
+{
+	"meta": {
+		"image": "tilesheet.png",
+		"size": {"w":644,"h":424},
+		"scale": "1"
+	},
+	"frames": {
+		"moon.png":
+		{
+			"frame": {"x":2,"y":2,"w":172,"h":256},
+			"rotated": false,
+			"trimmed": true,
+			"spriteSourceSize": {"x":0,"y":0,"w":172,"h":256},
+			"sourceSize": {"w":256,"h":256}
+		},
+		"cloud.png":
+		{
+			"frame": {"x":178,"y":2,"w":256,"h":152},
+			"rotated": false,
+			"trimmed": true,
+			"spriteSourceSize": {"x":0,"y":40,"w":256,"h":152},
+			"sourceSize": {"w":256,"h":256}
+		},
+		"star.png":
+		{
+			"frame": {"x":438,"y":2,"w":204,"h":196},
+			"rotated": false,
+			"trimmed": true,
+			"spriteSourceSize": {"x":26,"y":37,"w":204,"h":196},
+			"sourceSize": {"w":256,"h":256}
+		},
+		"sun.png":
+		{
+			"frame": {"x":2,"y":262,"w":160,"h":160},
+			"rotated": false,
+			"trimmed": true,
+			"spriteSourceSize": {"x":48,"y":48,"w":160,"h":160},
+			"sourceSize": {"w":256,"h":256}
+		},
+		"smile.png":
+		{
+			"frame": {"x":438,"y":202,"w":64,"h":48},
+			"rotated": false,
+			"trimmed": true,
+			"spriteSourceSize": {"x":96,"y":121,"w":64,"h":48},
+			"sourceSize": {"w":256,"h":256}
+		},
+		"contract.png":
+		{
+			"frame": {"x":506,"y":202,"w":48,"h":48},
+			"rotated": false,
+			"trimmed": true,
+			"spriteSourceSize": {"x":8,"y":8,"w":48,"h":48},
+			"sourceSize": {"w":64,"h":64}
+		},
+		"expand.png":
+		{
+			"frame": {"x":558,"y":202,"w":48,"h":48},
+			"rotated": false,
+			"trimmed": true,
+			"spriteSourceSize": {"x":8,"y":8,"w":48,"h":48},
+			"sourceSize": {"w":64,"h":64}
+		}
+	}
+}
